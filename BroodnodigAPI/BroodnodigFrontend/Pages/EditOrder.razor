@@ -1,0 +1,119 @@
+@page "/EditOrder/{Mail}"
+@using BroodnodigFrontend.Managers
+@using DTO.DailySnack
+@using DTO.Order
+<PageTitle>Edit Order</PageTitle>
+
+
+<div class="container">
+    <h1 class="title">Edit Order</h1>
+    <form>
+        <div class="fieldContainer">
+
+            <div class="field snackField">
+                <label for="snack">DailySnack:</label>
+                <input type="checkbox" @bind="newOrder.HasDailySnack" class="checkBox" name="snack" id="snack">
+                <label for="snack"></label>
+            </div>
+
+            <div class="field">
+                <label for="remark">Remarks(Requierd):</label>
+                <textarea id="remark" @bind="newOrder.Opmerkingen" name="remark">@order.Opmerkingen</textarea>
+            </div>
+
+            <div class="field">
+                <label for="allergies">Allergies(Requierd):</label>
+                <textarea id="allergies" @bind="newOrder.Alergien" name="allergies">@order.Alergien</textarea>
+            </div>
+
+        </div>
+        <div class="buttonsContainer">
+            <button class="button" onclick="@updateOrder"><a href="/">Update</a></button>
+
+            @if (aanwezig)
+            {
+                <button class="button" @onclick="changeAanwezig">Sign Off</button>
+
+            }
+            else
+            {
+                <button class="button" @onclick="changeAanwezig">Sign In</button>
+            }
+            <p style="font-size:10px; width:50px;">Toggle the DailySnack to see your old remarks and allergies! Do not forget to sign up for today </p>
+        </div>
+
+    </form>
+
+</div>
+
+
+@code
+{
+    [Parameter]
+    public string Mail { get; set; }
+
+    public bool aanwezig = false;
+
+    InfoOrderwrite order = new InfoOrderwrite();
+    InfoOrderwrite newOrder = new InfoOrderwrite();
+
+    public Guid orderId;
+
+    //http and managers
+    HttpClient httpClient;
+    OrderManager orderManager;
+
+    protected override void OnInitialized()
+    {
+        httpClient = new HttpClient();
+        orderManager = new OrderManager(httpClient);
+
+    }
+
+    protected async override void OnAfterRender(bool firstRender)
+    {
+        getOrder();
+    }
+
+    //gets order info
+    public async void getOrder()
+    {
+        var orderRes = await orderManager.getOrder(Mail);
+
+        //order.IsAangemeld = orderRes.Aanwezig;
+        order.HasDailySnack = orderRes.HasDailySnack;
+        order.Email = Mail;
+        order.Opmerkingen = orderRes.Opmerkingen;
+        order.Alergien = orderRes.Alergien;
+
+        orderId = orderRes.Id;
+    }
+
+    //updates order
+    public void updateOrder()
+    {
+        if(newOrder.Opmerkingen == null)
+        {
+            newOrder.Opmerkingen = order.Opmerkingen;
+        }
+        if(newOrder.Alergien == null)
+        {
+            newOrder.Alergien = order.Alergien;
+        }
+
+
+        order.Opmerkingen = newOrder.Opmerkingen;
+        order.HasDailySnack = newOrder.HasDailySnack;
+        order.Alergien = newOrder.Alergien;
+        order.IsAangemeld = aanwezig;
+
+        orderManager.updateOrder(order, orderId);
+    }
+    
+    //change aanwezig
+    public void changeAanwezig()
+    {
+        aanwezig = !aanwezig;
+    }
+
+}

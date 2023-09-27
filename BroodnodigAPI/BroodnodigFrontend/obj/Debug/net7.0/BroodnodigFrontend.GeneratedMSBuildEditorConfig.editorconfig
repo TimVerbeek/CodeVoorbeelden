@@ -1,0 +1,45 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BroodnodigFrontend
+build_property.RootNamespace = BroodnodigFrontend
+build_property.ProjectDir = C:\school\c#\BroodnodigC#\BroodnodigAPI\BroodnodigFrontend\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\school\c#\BroodnodigC#\BroodnodigAPI\BroodnodigFrontend
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/school/c\#/BroodnodigC\#/BroodnodigAPI/BroodnodigFrontend/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/school/c\#/BroodnodigC\#/BroodnodigAPI/BroodnodigFrontend/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/school/c\#/BroodnodigC\#/BroodnodigAPI/BroodnodigFrontend/Pages/CreateOrder.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlT3JkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-xhor7l04cu
+
+[C:/school/c\#/BroodnodigC\#/BroodnodigAPI/BroodnodigFrontend/Pages/EditOrder.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdE9yZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-eaprhbsdae
+
+[C:/school/c\#/BroodnodigC\#/BroodnodigAPI/BroodnodigFrontend/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-p28j8yewjd
+
+[C:/school/c\#/BroodnodigC\#/BroodnodigAPI/BroodnodigFrontend/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-j4zjb7jq9o
+
+[C:/school/c\#/BroodnodigC\#/BroodnodigAPI/BroodnodigFrontend/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8y1sh8naaf

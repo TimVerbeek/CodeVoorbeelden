@@ -1,0 +1,26 @@
+
+.navigation[b-8y1sh8naaf] {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-8y1sh8naaf] {
+        display: none;
+    }
+
+    .collapse[b-8y1sh8naaf] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-8y1sh8naaf] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}

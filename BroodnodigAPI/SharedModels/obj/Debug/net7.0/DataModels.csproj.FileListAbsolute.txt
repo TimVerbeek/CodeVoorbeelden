@@ -1,0 +1,12 @@
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\bin\Debug\net7.0\DataModels.deps.json
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\bin\Debug\net7.0\DataModels.dll
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\bin\Debug\net7.0\DataModels.pdb
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\DataModels.csproj.AssemblyReference.cache
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\DataModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\DataModels.AssemblyInfoInputs.cache
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\DataModels.AssemblyInfo.cs
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\DataModels.csproj.CoreCompileInputs.cache
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\DataModels.dll
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\refint\DataModels.dll
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\DataModels.pdb
+C:\school\c#\BroodnodigC#\BroodnodigAPI\SharedModels\obj\Debug\net7.0\ref\DataModels.dll

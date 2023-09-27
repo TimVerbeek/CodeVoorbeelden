@@ -1,0 +1,11 @@
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.topNav {
+    display:flex;
+    background-color:orange;
+    border-bottom: black 1px solid;
+}

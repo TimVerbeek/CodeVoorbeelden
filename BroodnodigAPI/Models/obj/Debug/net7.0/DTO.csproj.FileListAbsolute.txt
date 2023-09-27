@@ -1,0 +1,12 @@
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\bin\Debug\net7.0\DTO.deps.json
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\bin\Debug\net7.0\DTO.dll
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\bin\Debug\net7.0\DTO.pdb
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\DTO.csproj.AssemblyReference.cache
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\DTO.AssemblyInfoInputs.cache
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\DTO.AssemblyInfo.cs
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\DTO.csproj.CoreCompileInputs.cache
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\DTO.dll
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\refint\DTO.dll
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\DTO.pdb
+C:\school\c#\BroodnodigC#\BroodnodigAPI\Models\obj\Debug\net7.0\ref\DTO.dll

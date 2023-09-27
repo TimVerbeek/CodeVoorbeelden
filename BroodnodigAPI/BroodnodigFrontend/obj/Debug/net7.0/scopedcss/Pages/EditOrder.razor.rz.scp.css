@@ -1,0 +1,73 @@
+.container[b-eaprhbsdae]{
+    width: 500px;
+    height: 500px;
+    background-color: #e8e8e8;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.title[b-eaprhbsdae]{
+    text-align: center;
+}
+
+.button[b-eaprhbsdae]{
+    width: 70px;
+    margin: 10px;
+}
+
+.fieldContainer[b-eaprhbsdae]{
+    display: flex;
+    justify-content: center;
+}
+.fieldContainer[b-eaprhbsdae]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.field[b-eaprhbsdae]{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.checkBox[b-eaprhbsdae]{
+    margin: 0;
+}
+.field label[b-eaprhbsdae]{
+    margin: 10px;
+}
+.snackField[b-eaprhbsdae]{
+    justify-content: normal;
+    align-items: center;
+}
+.snackField input[b-eaprhbsdae]{
+    width: 30px;
+    height: 30px;
+}
+.field #remark[b-eaprhbsdae]{
+    width: 250px;
+    height: 100px;
+}
+.field #allergies[b-eaprhbsdae]{
+    width: 250px;
+    height: 60px;
+}
+form[b-eaprhbsdae]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonsContainer[b-eaprhbsdae]{
+    display: flex;
+}
+.buttonsContainer button[b-eaprhbsdae]{
+    width: auto;
+    height: 40px;
+    padding: 5px;
+}

@@ -1,0 +1,81 @@
+@page "/CreateOrder/{Mail}"
+@using BroodnodigFrontend.Managers
+@using DTO.DailySnack
+@using DTO.Order
+
+<PageTitle>Create Order</PageTitle>
+
+<div class="container">
+
+    <h1 class="title">Create Order</h1>
+
+    <form>
+
+        <div class="fieldContainer">
+
+            <div class="field snackField">
+                <label for="snack">DailySnack:</label>
+                <input @bind="hasDailySnack" type="checkbox" class="checkBox" name="snack" id="snack">
+                <label for="snack">@dailySnack.Name</label>
+            </div>
+
+            <div class="field">
+                <label for="remark">Remarks (required):</label>
+                <textarea @bind="remarks" id="remark" name="remark">No Remarks</textarea>
+            </div>
+
+            <div class="field">
+                <label for="allergies">Allergies (required):</label>
+                <textarea @bind="allergies" id="allergies" name="allergies">No Allergies</textarea>
+            </div>
+
+        </div>
+
+        <button class="button" @onclick="createOrder"><a href="/">Send</a></button>
+
+    </form>
+
+</div>
+
+
+@code
+{
+     [Parameter]
+     public string Mail { get; set; }
+
+    //order data
+     public bool hasDailySnack = false;
+     public string remarks = "";
+     public string allergies = "";
+     public DailySnackResponse dailySnack =new DailySnackResponse(){Name = ""};
+
+    //http and managers
+    private HttpClient httpClient;
+    private OrderManager orderManager;
+    private DailySnackManager dailySnackManager;
+
+    //Initialize
+    protected async override void OnInitialized()
+    {
+        httpClient = new HttpClient();
+        orderManager = new OrderManager(httpClient);
+        dailySnackManager = new DailySnackManager(httpClient);
+
+        this.dailySnack = await dailySnackManager.GetDailySnackForToday();
+
+    }
+
+    //Create order
+    public void createOrder()
+    {
+        InfoOrderwrite order = new InfoOrderwrite();
+        order.IsAangemeld = true;
+        order.HasDailySnack = hasDailySnack;
+        order.Email = Mail;
+        order.Opmerkingen = remarks;
+        order.Alergien = allergies;
+
+        orderManager.createOrder(order);
+    }
+
+}

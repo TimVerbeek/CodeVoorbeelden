@@ -1,0 +1,233 @@
+/* /Pages/CreateOrder.razor.rz.scp.css */
+.container[b-xhor7l04cu]{
+    width: 500px;
+    height: 500px;
+    background-color: #e8e8e8;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.title[b-xhor7l04cu]{
+    text-align: center;
+}
+
+.button[b-xhor7l04cu]{
+    width: 70px;
+    margin: 10px;
+}
+
+.fieldContainer[b-xhor7l04cu]{
+    display: flex;
+    justify-content: center;
+}
+.fieldContainer[b-xhor7l04cu]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.field[b-xhor7l04cu]{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.checkBox[b-xhor7l04cu]{
+    margin: 0;
+}
+.field label[b-xhor7l04cu]{
+    margin: 10px;
+}
+.snackField[b-xhor7l04cu]{
+    justify-content: normal;
+    align-items: center;
+}
+.snackField input[b-xhor7l04cu]{
+    width: 30px;
+    height: 30px;
+}
+.field #remark[b-xhor7l04cu]{
+    width: 250px;
+    height: 100px;
+}
+.field #allergies[b-xhor7l04cu]{
+    width: 250px;
+    height: 60px;
+}
+form[b-xhor7l04cu]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* /Pages/EditOrder.razor.rz.scp.css */
+.container[b-eaprhbsdae]{
+    width: 500px;
+    height: 500px;
+    background-color: #e8e8e8;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.title[b-eaprhbsdae]{
+    text-align: center;
+}
+
+.button[b-eaprhbsdae]{
+    width: 70px;
+    margin: 10px;
+}
+
+.fieldContainer[b-eaprhbsdae]{
+    display: flex;
+    justify-content: center;
+}
+.fieldContainer[b-eaprhbsdae]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.field[b-eaprhbsdae]{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.checkBox[b-eaprhbsdae]{
+    margin: 0;
+}
+.field label[b-eaprhbsdae]{
+    margin: 10px;
+}
+.snackField[b-eaprhbsdae]{
+    justify-content: normal;
+    align-items: center;
+}
+.snackField input[b-eaprhbsdae]{
+    width: 30px;
+    height: 30px;
+}
+.field #remark[b-eaprhbsdae]{
+    width: 250px;
+    height: 100px;
+}
+.field #allergies[b-eaprhbsdae]{
+    width: 250px;
+    height: 60px;
+}
+form[b-eaprhbsdae]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonsContainer[b-eaprhbsdae]{
+    display: flex;
+}
+.buttonsContainer button[b-eaprhbsdae]{
+    width: auto;
+    height: 40px;
+    padding: 5px;
+}
+/* /Pages/Index.razor.rz.scp.css */
+.container[b-p28j8yewjd]{
+    width: 500px;
+    min-height: 300px;
+    background-color: #e8e8e8;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.title[b-p28j8yewjd]{
+    text-align: center;
+}
+
+.button[b-p28j8yewjd]{
+    width: 70px;
+    margin: 10px;
+}
+
+.fieldContainer[b-p28j8yewjd]{
+    display: flex;
+    justify-content: center;
+}
+
+.fieldContainer label[b-p28j8yewjd]{
+    margin: 10px;
+}
+.fieldContainer input[b-p28j8yewjd]{
+    width: 250px;
+}
+form[b-p28j8yewjd]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.actionContainer[b-p28j8yewjd]{
+    width: 500px;
+    height: 500px;
+    background-color: #e7e7e7;
+    border: 1px solid black;
+}
+.edit[b-p28j8yewjd]{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+
+.page[b-j4zjb7jq9o] {
+    display: flex;
+    flex-direction: column;
+}
+
+.topNav[b-j4zjb7jq9o] {
+    display:flex;
+    background-color:orange;
+    border-bottom: black 1px solid;
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+
+.navigation[b-8y1sh8naaf] {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-8y1sh8naaf] {
+        display: none;
+    }
+
+    .collapse[b-8y1sh8naaf] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-8y1sh8naaf] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}

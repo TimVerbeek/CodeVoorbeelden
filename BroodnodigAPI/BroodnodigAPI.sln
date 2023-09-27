@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BroodnodigAPI", "BroodnodigAPI\BroodnodigAPI.csproj", "{94FB34A9-AE25-4F97-B0B8-0636BB689EC3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF9CEC26-F066-4615-B639-5DA802300C0F} = {DF9CEC26-F066-4615-B639-5DA802300C0F}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModels", "SharedModels\DataModels.csproj", "{DF9CEC26-F066-4615-B639-5DA802300C0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BroodnodigFrontend", "BroodnodigFrontend\BroodnodigFrontend.csproj", "{99962B33-4C84-4289-B4B7-3C9B63008157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO", "Models\DTO.csproj", "{B28A78F2-2C64-4B60-9E9F-69A5804E6333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovadisBackendApp", "CovadisBackendApp\CovadisBackendApp.csproj", "{89E43A2D-073B-41CA-A9A0-B2A28F6DFD60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94FB34A9-AE25-4F97-B0B8-0636BB689EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FB34A9-AE25-4F97-B0B8-0636BB689EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FB34A9-AE25-4F97-B0B8-0636BB689EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FB34A9-AE25-4F97-B0B8-0636BB689EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF9CEC26-F066-4615-B639-5DA802300C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9CEC26-F066-4615-B639-5DA802300C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9CEC26-F066-4615-B639-5DA802300C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9CEC26-F066-4615-B639-5DA802300C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99962B33-4C84-4289-B4B7-3C9B63008157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99962B33-4C84-4289-B4B7-3C9B63008157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99962B33-4C84-4289-B4B7-3C9B63008157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99962B33-4C84-4289-B4B7-3C9B63008157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28A78F2-2C64-4B60-9E9F-69A5804E6333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28A78F2-2C64-4B60-9E9F-69A5804E6333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28A78F2-2C64-4B60-9E9F-69A5804E6333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28A78F2-2C64-4B60-9E9F-69A5804E6333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E43A2D-073B-41CA-A9A0-B2A28F6DFD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E43A2D-073B-41CA-A9A0-B2A28F6DFD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E43A2D-073B-41CA-A9A0-B2A28F6DFD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E43A2D-073B-41CA-A9A0-B2A28F6DFD60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6117BAF8-538C-42BB-92CA-8067248DFB86}
+	EndGlobalSection
+EndGlobal

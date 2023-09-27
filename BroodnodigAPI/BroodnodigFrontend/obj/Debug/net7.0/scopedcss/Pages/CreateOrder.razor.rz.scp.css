@@ -1,0 +1,65 @@
+.container[b-xhor7l04cu]{
+    width: 500px;
+    height: 500px;
+    background-color: #e8e8e8;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.title[b-xhor7l04cu]{
+    text-align: center;
+}
+
+.button[b-xhor7l04cu]{
+    width: 70px;
+    margin: 10px;
+}
+
+.fieldContainer[b-xhor7l04cu]{
+    display: flex;
+    justify-content: center;
+}
+.fieldContainer[b-xhor7l04cu]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.field[b-xhor7l04cu]{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.checkBox[b-xhor7l04cu]{
+    margin: 0;
+}
+.field label[b-xhor7l04cu]{
+    margin: 10px;
+}
+.snackField[b-xhor7l04cu]{
+    justify-content: normal;
+    align-items: center;
+}
+.snackField input[b-xhor7l04cu]{
+    width: 30px;
+    height: 30px;
+}
+.field #remark[b-xhor7l04cu]{
+    width: 250px;
+    height: 100px;
+}
+.field #allergies[b-xhor7l04cu]{
+    width: 250px;
+    height: 60px;
+}
+form[b-xhor7l04cu]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

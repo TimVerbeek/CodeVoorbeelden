@@ -1,0 +1,88 @@
+﻿@page "/"
+@using BroodnodigFrontend.Managers
+@inject NavigationManager NavigationManager
+<PageTitle>Check Mail</PageTitle>
+
+<div class="container">
+
+    <h1 class="title">Check je Email</h1>
+
+        <div class="fieldContainer">
+            <label for="email">Mail</label>
+            <input type="email" required @bind="mail" id="email">
+        </div>
+
+        <button class="button" @onclick="checkEmailUniqueness">Check</button>
+ 
+         <div class="actionContainer">
+            @if (result == 2)
+            {
+                <div class="edit">
+                    
+                    <h1>U have a order</h1>
+                    <h4>Wat do you want to do?</h4>
+
+                    <div>
+                        <a href="/">
+                            <button>Nothing</button>
+                        </a>
+                        <a href="/EditOrder/@mail">
+                            <button>Edit</button>
+                        </a>
+                    </div>
+
+                </div>
+            }
+            @if(result == 1)
+            {
+                <div class="create">
+
+                    <h1>U dont have a order</h1>
+                    <h4>Wat do you want to do?</h4>
+
+                    <div>
+                        <a href="/">
+                            <button>Nothing</button>
+                        </a>
+                        <a href="CreateOrder/@mail">
+                            <button>Create order</button>
+                        </a>
+                    </div>
+
+                </div>
+            }
+        </div>
+</div>
+
+
+@code{
+    //http and managers
+    HttpClient httpClient;
+    OrderManager orderManager;
+
+    
+    string mail = null;
+    public int result; //1 == true, 2 == false
+    
+    //checks email for uniqueness
+    public async void checkEmailUniqueness()
+    {
+        if (mail != "" || mail != null)
+        {
+            httpClient = new HttpClient();
+            orderManager = new OrderManager(httpClient);
+
+            //receives the result of the mail uniqueness, True or False
+            if (await orderManager.CheckEmailUniqueness(mail))
+            {
+                result = 2;
+            }
+            else
+            {
+                result = 1;
+            }
+        }
+    }
+
+
+}
